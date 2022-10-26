@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+/* ===== Preloader ===== */
+#preloader .infinity {
+  position: relative;
+  width: 120px;
+  height: 60px;
+}
+#preloader .infinity div, #preloader .infinity span {
+  position: absolute;
+}
+#preloader .infinity div {
+  top: 0;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  animation: rotate 6.9s linear infinite;
+}
+#preloader .infinity div span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 50%;
+  background-color: #8c6ff0;
+  margin: -8px 0 0 0;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(140, 111, 240, 0.09);
+  transform: rotate(90deg);
+  animation: move 6.9s linear infinite;
+}
+#preloader .infinity div span:before, #preloader .infinity div span:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: inherit;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  box-shadow: inherit;
+}
+#preloader .infinity div span:before {
+  animation: first-drop 0.8s linear infinite;
+}
+#preloader .infinity div span:after {
+  animation: second-drop 0.8s linear infinite 0.4s;
+}
+#preloader .infinity div:nth-child(2) {
+  animation-delay: -2.3s;
+}
+#preloader .infinity div:nth-child(2) span {
+  animation-delay: -2.3s;
+}
+#preloader .infinity div:nth-child(3) {
+  animation-delay: -4.6s;
+}
+#preloader .infinity div:nth-child(3) span {
+  animation-delay: -4.6s;
+}
+#preloader .infinity-chrome {
+  width: 128px;
+  height: 60px;
+}
+#preloader .infinity-chrome div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #8c6ff0;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(140, 111, 240, 0.09);
+  filter: url(#goo);
+  -webkit-filter: url(#goo);
+  transform: scaleX(-1);
+  offset-path: path("M64.3636364,29.4064278 C77.8909091,43.5203348 84.4363636,56 98.5454545,56 C112.654545,56 124,44.4117395 124,30.0006975 C124,15.5896556 112.654545,3.85282763 98.5454545,4.00139508 C84.4363636,4.14996252 79.2,14.6982509 66.4,29.4064278 C53.4545455,42.4803627 43.5636364,56 29.4545455,56 C15.3454545,56 4,44.4117395 4,30.0006975 C4,15.5896556 15.3454545,4.00139508 29.4545455,4.00139508 C43.5636364,4.00139508 53.1636364,17.8181672 64.3636364,29.4064278 Z");
+  animation: move-svg 6.9s linear infinite;
+}
+#preloader .infinity-chrome div:before, #preloader .infinity-chrome div:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: inherit;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  box-shadow: inherit;
+}
+#preloader .infinity-chrome div:before {
+  animation: first-drop 0.8s linear infinite;
+}
+#preloader .infinity-chrome div:after {
+  animation: second-drop 0.8s linear infinite 0.4s;
+}
+#preloader .infinity-chrome div:nth-child(2) {
+  animation-delay: -2.3s;
+}
+#preloader .infinity-chrome div:nth-child(3) {
+  animation-delay: -4.6s;
+}
+@keyframes rotate {
+  50% {
+    margin-left: 0;
+    transform: rotate(360deg);
+  }
+  50.0001%, 100% {
+    margin-left: -60px;
+  }
+}
+@keyframes move {
+  0%, 50% {
+    left: -8px;
+  }
+  25% {
+    background-color: #5628ee;
+  }
+  75% {
+    background-color: #23c4f8;
+  }
+  50.0001%, 100% {
+    left: auto;
+    right: -8px;
+  }
+}
+@keyframes move-svg {
+  0% {
+    offset-distance: 0;
+  }
+  25% {
+    background-color: #5628ee;
+  }
+  75% {
+    background-color: #23c4f8;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+@keyframes first-drop {
+  100% {
+    transform: translate(32px, 8px) scale(0);
+  }
+}
+@keyframes second-drop {
+  0% {
+    transform: translate(0, 0) scale(0.9);
+  }
+  100% {
+    transform: translate(32px, -8px) scale(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

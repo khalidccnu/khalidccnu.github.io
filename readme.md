@@ -1,0 +1,12 @@
+### Hi <img src="./asset/img/hi.gif" alt="hi" width="22px"> Check out my projects [&rarr;](https://projects.khalidmahmud.me)
+
+- [Lisa](https://projects.khalidmahmud.me/lisa)
+- [Smith](https://projects.khalidmahmud.me/smith)
+- [Anas](https://projects.khalidmahmud.me/anas)
+- [LoopLab](https://projects.khalidmahmud.me/looplab)
+- [Mizuxe](https://projects.khalidmahmud.me/mizuxe)
+- [Glozzom](https://projects.khalidmahmud.me/glozzom)
+- [Paul](https://projects.khalidmahmud.me/paul)
+- [Cuda](https://projects.khalidmahmud.me/cuda)
+- [Victoria Convention Center](https://projects.khalidmahmud.me/vcc)
+- [Programming Hero](https://projects.khalidmahmud.me/programming-hero-clone)

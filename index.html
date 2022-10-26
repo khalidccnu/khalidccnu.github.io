@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Social Media -->
+    <meta property="og:title" content="List of project | SK">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./asset/img/social.png">
+    <meta property="og:image:alt" content="SK">
+    <meta property="og:url" content="https://projects.khalidmahmud.me">
+    <meta property="og:site_name" content="Khalid Attainable Here | SK">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Title -->
+    <title>List of project | SK</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./asset/img/favicon.svg" type="image/x-icon">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./asset/tailwind/output.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body class="flex flex-col w-screen min-h-screen bg-gray-400/40 dark:bg-slate-900/90 font-body overflow-x-hidden" onload="preloader()">
+<!-- Preloader -->
+<div class="fixed flex justify-center items-center w-full h-screen bg-[#2a2826] z-[999]" id="preloader">
+    <div class="infinity">
+        <div><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+    </div>
+    <div class="infinity-chrome hidden">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="hidden">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>
+                <feBlend in="SourceGraphic" in2="goo"/>
+            </filter>
+        </defs>
+    </svg>
+</div>
+
+<!-- Header -->
+<header class="fixed w-full z-50 bg-slate-50/60 dark:bg-slate-800/80 backdrop-blur-2xl border-[rgba(71,_85,_105,_0.1)] dark:border-[rgba(248,_250,_252,_0.08)] border-b">
+    <nav class="navbar">
+        <div class="container flex flex-wrap items-center py-5">
+            <a class="navbar-brand w-8 mr-auto" href="./">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0" y="0" viewBox="0 0 516.9 511.4">
+                    <g>
+                        <g>
+                            <path class="text-slate-700 dark:text-green-500 fill-current" d="M307.5,472.8c-13.3,6.5-26.6,11.3-40.1,15.4c-29.1,8.8-58.9,12.8-89.3,11c-38.7-2.3-74.3-13.5-104.3-39.1 c-14.4-12.3-26.4-26.6-35.8-43.3c-12.4-22.2-18.9-46-21.3-71.1c-3.3-33.3-0.7-66.1,8.6-98.4c4.2-14.7,9.4-29,15.8-42.9 c18.4-39.8,43.4-74.9,75.8-104.4c13.3-12.1,28.1-22.5,42.2-33.5c2.2-1.7,4.8-2.8,7.6-4.4c2.4,2.7,4.6,5,6.7,7.6 c3.7,4.5,7,9.3,11.1,13.5c4,4.1,3.7,8.7,2.7,13.3c-20.2,91.1-40.5,182.1-60.8,273.2c-4.2,19-8.3,38.1-12.4,57.2 c-1.3,6-0.7,11.7,3.8,16.7c5.3,6,10.2,12.3,15,18.7c4.8,6.5,10.7,9.2,19,8.4c8.7-0.8,17.6-0.3,26.4-0.2c5.4,0.1,10.2-1.5,14.4-4.8 c3.8-3,7.6-5.9,11.5-8.8c7.1-5.2,10.9-12.4,12.8-20.8c2.2-9.6,4.3-19.2,6.5-28.8c1.4-6.1,2.2-6.6,8.4-7.1 c5.1-0.4,10.3-1.1,15.4-1.6c3.3-0.3,6.6-0.4,10.6-0.6c3.7,11.3,7.8,22.2,10.7,33.3c3,11.5,9,20.7,18.4,27.7 C293.3,464,300.2,468,307.5,472.8z"/>
+                            <path class="text-slate-700 dark:text-green-500 fill-current" d="M287.3,114c1.4-7,2.6-13.5,4-19.9c2.8-12.7,5.5-25.4,8.8-38c2.2-8.4,0.4-15.2-5.4-21.6 c-5.1-5.6-9.6-11.8-15.1-18.6c7.7-1.2,14.3-2.8,21-3.3c23.8-1.8,47.6-1.2,70.9,4.7c34.9,8.9,64.4,27.1,88.2,53.9 c22.3,25.1,34.4,55.1,39,88.2c1.7,12.5,2.9,25.2,2.8,37.8c-0.2,23.9-4.3,47.4-11.9,70.1c-3.5,10.4-6.9,20.8-11.2,30.9 c-10.4,24.8-24.2,47.8-40.4,69.2c-12.3,16.2-25.1,32-40.8,45.2c-0.7,0.6-1.6,1.2-3.2,2.3c-2.5-2.9-5.3-5.4-7.2-8.6 c-4.4-7.2-8.8-14.6-12.4-22.2c-11.5-23.8-22.7-47.8-34.1-71.7c-3.7-7.8-3.1-12.2,2.8-18.5c10.9-11.9,21.3-24.3,32.8-35.7 c13.2-13.2,27.3-25.4,40.9-38.1c4.8-4.5,9.7-9.2,13.7-14.4c2.3-3,3.2-7.2,4.2-11.1c1.3-4.5,2.1-9.1,3.1-13.6 c1.8-8.9-1-16.2-7.9-21.8c-5.5-4.4-11.1-8.7-17.3-11.8c-4.9-2.4-10.7-3.4-16.2-4.1c-5.6-0.7-11.3-0.1-17-0.2 c-7.9-0.1-15.2-2.5-21.2-7.6c-14.6-12.3-32-17.2-50.5-19.4C301.1,115.6,294.5,114.8,287.3,114z"/>
+                        </g>
+                        <path class="text-slate-700 dark:text-white fill-current" d="M217.6,304.9c-9.7,46.1-19.2,91.7-28.8,137.6c-16.7,1.8-32.9,0.6-50.1,0.9c0.5-4.5,0.5-8.3,1.3-11.9 c17.7-80,35.5-159.9,53.1-239.9c7.3-33.3,14.2-66.7,21.1-100.1c1.1-5.5,1.5-11.2,1.6-16.8c0.2-6.9-3.2-12-9.8-14.1 c-5.5-1.8-11.3-2.7-17-3.9c-1.3-0.3-2.5-0.5-4.6-0.9c0.9-5.2,1.7-10.2,2.5-15c15.2-3.3,81.3-4.8,89.4-1.8 c-17.9,80.8-35.8,161.6-53.7,242.7c4.5,2.3,9,1.7,13.4,1.2c9.6-1.1,18.3-4.8,26.5-9.7c22.9-13.6,43.9-29.7,60.7-50.6 c3.7-4.6,6.1-10.7,8.1-16.4c2.6-7.7-0.5-13.3-8-16.5c-2.9-1.2-5.9-2.2-9.3-3.5c0.9-4.9,1.7-9.6,2.7-14.6c2.2-0.1,4-0.3,5.8-0.3 c27,0,54,0.1,81-0.1c4.2,0,6.5,1.3,7.6,5.3c0.9,3.2,2.3,6.2,3.7,9.8c-37.5,34.9-79.3,64.5-118.9,97.3c0.7,2,1.3,3.8,2,5.7 c13.7,34.9,27.4,69.7,41.1,104.6c1.2,3.1,2.9,6,4.3,9c5.9,12.9,15.7,20.8,29.9,23c2.6,0.4,5.1,1.2,8,2c-0.8,4.1-1.5,7.9-2.4,11.6 c-0.7,3-3.6,2.8-5.7,3c-6.8,0.5-13.6,1.1-20.4,1.1c-15.3-0.1-30.6-0.6-45.9-0.7c-3.8,0-5.6-1.6-6.8-5.1 c-10.9-30.9-21.9-61.8-33-92.7c-3.1-8.6-6.3-17.2-9.3-25.9c-3.1-9.1-8.9-14.2-18.8-14.1C232,305,225.2,304.9,217.6,304.9z"/>
+                    </g>
+                </svg>
+            </a>
+            <button type="button" class="navbar-toggler inline-flex md:hidden" onclick="navbar_toggle('navbar-collapse')">
+                <span class="bx bx-menu navbar-toggler-icon inline-flex text-2xl text-slate-700 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-500 transition-[color] duration-500"></span>
+            </button>
+            <div class="bx bxs-moon flex ml-2 md:ml-0 md:mr-2 lg:mr-3 text-slate-700 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-500 transition-[color] duration-500 cursor-pointer" id="tm-switch"></div>
+            <div class="collapse hidden md:block w-full md:w-auto mt-5 md:mt-0" id="navbar-collapse">
+                <ul class="navbar-nav flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 lg:space-x-3 text-sm font-semibold capitalize text-center">
+                    <li class="nav-item"><a class="nav-link block hover:bg-slate-800 dark:hover:bg-slate-900 px-3 py-2 border border-solid border-slate-700 dark:border-slate-400 rounded-md text-slate-700 dark:text-slate-400 hover:text-slate-100 dark:hover:text-slate-200 transition-colors duration-500" href="https://khalidmahmud.me">back</a></li>
+                    <li class="nav-item"><a class="nav-link block hover:bg-slate-800 dark:hover:bg-slate-900 px-3 py-2 border border-solid border-slate-700 dark:border-slate-400 rounded-md text-slate-700 dark:text-slate-400 hover:text-slate-100 dark:hover:text-slate-200 transition-colors duration-500" href="javascript:void(0)" onclick="reload()">refresh</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Project -->
+<section class="pt-24 pb-12" id="project">
+    <div class="container">
+        <div class="max-w-xs mx-auto -mt-6 -mb-2">
+            <lottie-player src="./asset/img/project.json" background="transparent" speed="1" class="w-full" loop autoplay></lottie-player>
+        </div>
+        <div class="row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/programming-hero.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>tailwindcss</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/programming-hero-clone" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/programming-hero-clone" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/vcc.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>figma to html</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/vcc" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/vcc" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/cuda.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>psd to html</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/cuda" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/cuda" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/paul.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>psd to html</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/paul" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/paul" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/glozzom.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>bootstrap</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/glozzom" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/glozzom" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/mizuxe.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>bootstrap</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/mizuxe" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/mizuxe" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/looplab.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>bootstrap</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/looplab" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/looplab" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/anas.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>css</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/anas" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/anas" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/smith.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>css</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/smith" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/smith" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="./asset/img/lisa.png" alt="" class="w-full h-full object-cover">
+                    <div class="layer group absolute left-0 top-0 w-full h-full hover:bg-[linear-gradient(rgba(0,_0,_0,_0.5)_0%,_#191919)] transition-[background] duration-500">
+                        <div class="flex items-center absolute left-1/2 top-0 -translate-x-1/2 bg-orange-500 text-slate-100 text-sm font-medium uppercase px-2 py-1 space-x-1 rounded opacity-0 group-hover:top-2 group-hover:opacity-100 transition-[top,_opacity] duration-500">
+                            <i class="bx bx-info-circle"></i>
+                            <span>css</span>
+                        </div>
+                        <a href="https://github.com/khalidccnu/lisa" target="_blank" class="inline-flex justify-center items-center absolute left-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:left-2 group-hover:opacity-100 transition-[left,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 fill-current">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://projects.khalidmahmud.me/lisa" target="_blank" class="inline-flex justify-center items-center absolute right-0 bottom-2 w-8 h-8 bg-orange-500 text-slate-100 rounded-full opacity-0 group-hover:right-2 group-hover:opacity-100 transition-[right,_opacity] duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 fill-current">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm capitalize text-center py-5 mt-auto">
+    <div class="container">
+        <span>&copy; 2022 all rights reserved.</span>
+    </div>
+</footer>
+
+<!-- Lottie Player JS -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!-- Custom JS -->
+<script src="./asset/js/custom.js"></script>
+</body>
+</html>
