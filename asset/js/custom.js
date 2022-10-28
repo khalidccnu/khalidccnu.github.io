@@ -51,6 +51,23 @@ function navbar_toggle(collapseID) {
     else navbarTI.classList.replace("bx-menu-alt-right", "bx-menu");
 }
 
+// ===== Project / Lazy Loading =====
+const img = document.querySelectorAll("#project img");
+let imgOption = {}
+
+const observer = new IntersectionObserver(function(e, o) {
+    e.forEach(function(e) {
+        if (!e.isIntersecting) return;
+        let img = e.target;
+        img.src = img.getAttribute("data-src");
+        o.unobserve(img);
+    });
+}, imgOption);
+
+img.forEach(function(e) {
+    observer.observe(e);
+});
+
 // ===== Reload =====
 function reload() {
     location.reload();
