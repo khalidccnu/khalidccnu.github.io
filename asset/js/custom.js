@@ -53,12 +53,14 @@ function navbar_toggle(collapseID) {
 
 // ===== Project / Lazy Loading =====
 const img = document.querySelectorAll("#project img");
-let imgOption = {}
+const imgOption = {};
 
 const observer = new IntersectionObserver(function(e, o) {
     e.forEach(function(e) {
         if (!e.isIntersecting) return;
+
         let img = e.target;
+
         img.src = img.getAttribute("data-src");
         o.unobserve(img);
     });
