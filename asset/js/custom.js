@@ -51,6 +51,14 @@ function navbar_toggle(collapseID) {
     else navbarTI.classList.replace("bx-menu-alt-right", "bx-menu");
 }
 
+// ===== Home / Typewriter =====
+const typed = new Typed(".typewriter", {
+    strings: ["Web Developer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
 // ===== Project / Lazy Loading =====
 const img = document.querySelectorAll("#project img");
 const imgOption = {};

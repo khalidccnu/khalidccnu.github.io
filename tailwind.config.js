@@ -12,6 +12,16 @@ module.exports = {
     extend: {
       fontFamily: {
         "body": ["Jost", ...defaultTheme.fontFamily.sans]
+      },
+      keyframes: {
+        "home-arrow": {
+          "0%": { bottom: "-85px" },
+          "50%": { bottom: "-50px" },
+          "100%": { bottom: "-85px" }
+        }
+      },
+      animation: {
+        "home-arrow": "home-arrow 2s infinite"
       }
     }
   }
