@@ -11,3 +11,4 @@
 - [Victoria Convention Center](https://projects.khalidmahmud.me/vcc)
 - [Programming Hero](https://projects.khalidmahmud.me/programming-hero-clone)
 - [Khalid Mahmud](https://khalidmahmud.me)
+- [Bolby](https://projects.khalidmahmud.me/bolby)
